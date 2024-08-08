@@ -1,0 +1,106 @@
+
+body, h1, h2, p, ul, li, figure, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa;
+    color: #000000;
+}
+
+header {
+    background: linear-gradient(to right, #00796b 30%, #e0f7fa 70%); /* Degradê do verde para o azul claro */
+    color: #fff;
+    padding: 2rem 1rem; 
+    text-align: left; 
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    align-items: center; 
+}
+
+.header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+header h1 {
+    margin: 0; 
+    font-weight: 600; 
+    font-size: 2rem; 
+    flex: 1; 
+}
+
+header nav {
+    margin-left: auto; 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300; 
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery figure {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 500px; 
+    height: 300px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+}
+
+.gallery figcaption {
+    flex: 1; 
+    padding: 1rem;
+    background: #078a7a;
+    font-weight: 300; 
+}
+
+footer {
+    background: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    bottom: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-weight: 300; 
+}

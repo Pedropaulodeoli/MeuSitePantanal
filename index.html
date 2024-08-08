@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantanal - Flora e Fauna</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        .gallery figure {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 500px; 
+            height: 300px; 
+            object-fit: cover; 
+        }
+        .gallery figcaption {
+            flex: 1;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            position: relative;
+            height: 150px; /* Definindo uma altura específica para o cabeçalho */
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: linear-gradient(to right, #00796b 30%, #e0f7fa 70%);
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        .header-image {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 0.4; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <img src="topoimagem.jpg" alt="Imagem de Cabeçalho">
+        </div>
+        <div>
+            <h1>Explorando o Pantanal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="flora">
+        <h2>Flora do Pantanal</h2>
+        <div class="gallery">
+            <figure>
+                <img src="imagem1.jpg" alt="Flora do Pantanal 1">
+                <figcaption>O Ipê Rosa (Tabebuia impetiginosa) é uma árvore tropical da América do Sul, conhecida por sua deslumbrante floração. Com altura que varia de 10 a 20 metros, o Ipê Rosa tem folhas compostas por cinco folíolos que se tornam amarelas antes de cair. Suas flores, grandes e em forma de trombeta, são de uma vibrante cor rosa e aparecem no final do inverno e início da primavera, criando um espetáculo visual impressionante. A árvore prefere climas tropicais e subtropicais e solos bem drenados, sendo frequentemente plantada em parques e jardins. Além de sua beleza ornamental, a madeira do Ipê Rosa é valorizada por sua resistência e é utilizada em marcenaria e construção. A floração do Ipê Rosa também simboliza a chegada da estação das chuvas em algumas culturas.</figcaption>
+            </figure>
+            <figure>
+                <img src="flora2.jpg" alt="Flora do Pantanal 2">
+                <figcaption>Descrição da planta 2</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="fauna">
+        <h2>Fauna do Pantanal</h2>
+        <div class="gallery">
+            <figure>
+                <img src="fauna1.jpg" alt="Fauna do Pantanal 1">
+                <figcaption>Descrição do animal 1</figcaption>
+            </figure>
+            <figure>
+                <img src="fauna2.jpg" alt="Fauna do Pantanal 2">
+                <figcaption>Descrição do animal 2</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre o Pantanal</h2>
+        <p>O Pantanal é uma das maiores planícies alagadas do mundo e é conhecido por sua biodiversidade impressionante, tanto em flora quanto em fauna. É um ecossistema único e crucial para a conservação de muitas espécies.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pantanal - Flora e Fauna. Desenvolvido por alunos do 3º ano C</p>
+        <p>Escola: Escola militar estadual professor Natalino Ferreita Mendes</p>
+    </footer>
+</body>
+</html>
